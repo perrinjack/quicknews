@@ -11,8 +11,9 @@ class StoryHandler {
     let json = await response.json();
     let results = json.response.results;
     console.log(results);
-    var map1;
-    map1 = results.map((x) => new Story(x.id, x.webTitle));
-    console.log(map1);
+    var storiesArray;
+    storiesArray = results.map((x) => new Story(x.id, x.webTitle));
+    console.log(storiesArray);
+    return storiesArray;
   }
 }
