@@ -6,9 +6,10 @@ class StoryHandler {
   }
 
   ////stories received.
-  async getStories() {
-    let response = await fetch(this.URL);
-    let json = await response.json();
+  getStories() {
+    let response = fetch(this.URL);
+    console.log(response)
+    let json = response.json();
     let results = json.response.results;
     console.log(results);
     var storiesArray;
