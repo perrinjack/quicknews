@@ -6,17 +6,16 @@ class StoryHandler {
     this.stories = this.createStoryObjects();
   }
 
-<<<<<<< HEAD
   ////stories received.
   getStories() {
     let response = fetch(this.URL);
-    console.log(response)
+    console.log(response);
     let json = response.json();
     let results = json.response.results;
     console.log(results);
     var storiesArray;
     storiesArray = results.map((x) => new Story(x.id, x.webTitle));
-=======
+  }
   ////stories data received.
   async getStoriesData() {
     let response = await fetch(this.URL);
@@ -24,17 +23,16 @@ class StoryHandler {
     // console.log(json);
     return json.response.results;
   }
-///create objects of the stories.
+  ///create objects of the stories.
   async createStoryObjects() {
     var data = await this.getStoriesData();
     var storiesArray = data.map(
       (story) => new Story(story.id, story.webTitle, story.fields.thumbnail)
     );
->>>>>>> tmp
     console.log(storiesArray);
     return storiesArray; ///returns a list of stories wrapped in a promise
   }
-//Take the stories as an argument. and wrapHeadline method on each one.
+  //Take the stories as an argument. and wrapHeadline method on each one.
   wrapHeadlines(stories) {
     var hello = stories.map((x) => x.wrapHeadlineHtml());
     console.log(hello);

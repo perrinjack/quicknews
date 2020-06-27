@@ -2,10 +2,10 @@ class Story {
   constructor(id, headline, thumbnail) {
     this.id = id;
     this.headline = headline;
-    this.thumbnail = thumbnail
+    this.thumbnail = thumbnail;
   }
 
   wrapHeadlineHtml() {
-    return `<img src="${this.thumbnail}" ><li>${this.headline}</li>`;
+    return `<a href = 'http://guardian.co.uk/${this.id}'><img src="${this.thumbnail}" ><<li>${this.headline}</li></a>`;
   }
 }
