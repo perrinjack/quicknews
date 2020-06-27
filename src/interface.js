@@ -5,9 +5,8 @@ window.addEventListener(`DOMContentLoaded`, () => {
 
   function renderHeadlines() {
     storyhandler.stories.then(function (allStories) {
-      document.getElementById('app').innerHTML = storyhandler.wrapHeadlines(
-        allStories
-      );
+      document.getElementById('article1').innerHTML = allStories[0].headline;
+      document.getElementById('article2').innerHTML = allStories[1].headline
     });
   }
 });
