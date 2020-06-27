@@ -3,4 +3,8 @@ class Story {
     this.id = id;
     this.headline = headline;
   }
+
+  wrapHeadlineHtml() {
+    return `<li>${this.headline}</li>`;
+  }
 }
