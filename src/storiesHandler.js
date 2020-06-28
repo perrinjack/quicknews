@@ -1,21 +1,11 @@
 class StoryHandler {
   constructor(guardianUrl = 'https://content.guardianapis.com/search') {
     this.GUARDIANURL = guardianUrl;
-    this.QUERY_STRING = `?q=sport&page-size=2&api-key=8d81f046-2efd-4510-b987-0772a9c57adb&show-fields=thumbnail`;
+    this.QUERY_STRING = `?page-size=4&api-key=8d81f046-2efd-4510-b987-0772a9c57adb&show-fields=thumbnail`;
     this.URL = this.GUARDIANURL + this.QUERY_STRING;
     this.stories = this.createStoryObjects();
   }
 
-  ////stories received.
-  getStories() {
-    let response = fetch(this.URL);
-    console.log(response);
-    let json = response.json();
-    let results = json.response.results;
-    console.log(results);
-    var storiesArray;
-    storiesArray = results.map((x) => new Story(x.id, x.webTitle));
-  }
   ////stories data received.
   async getStoriesData() {
     let response = await fetch(this.URL);
@@ -27,7 +17,7 @@ class StoryHandler {
   async createStoryObjects() {
     var data = await this.getStoriesData();
     var storiesArray = data.map(
-      (story) => new Story(story.id, story.webTitle, story.fields.thumbnail)
+      (story) => new Story(story.id, story.webTitle, story.fields.thumbnail,story.sectionName)
     );
     console.log(storiesArray);
     return storiesArray; ///returns a list of stories wrapped in a promise
