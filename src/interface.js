@@ -49,7 +49,7 @@ window.addEventListener(`DOMContentLoaded`, () => {
         
         document.getElementById(
           `page`
-        ).innerHTML = `<div class='row fh5co-post-entry single-entry'><article class='col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0'><h2 class="headline" >${story.headline}</h2><figure><img src='${story.thumbnail}' class='img-responsive'></figure><div class='col-md-12'><p>${sentences}</p></div></article></div>`;
+        ).innerHTML = `<div class='row fh5co-post-entry single-entry'><article class='col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0'><h2 class="headline" >${story.headline}</h2><figure><img class = "main_image" src='${story.thumbnail}' class='img-responsive'></figure><div class='col-md-12'><p>${sentences}</p></div></article></div>`;
       });
     });
   }
