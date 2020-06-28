@@ -37,7 +37,7 @@ window.addEventListener(`DOMContentLoaded`, () => {
       for (i = 0; i < allStories.length; i++) {
         document.getElementById(
           `image${i + 1}`
-        ).innerHTML = `<a href="#hh"><img src='${allStories[i].thumbnail}' class="img-responsive"></img></a>`;
+        ).innerHTML = `<a href='#${allStories[i].id}'><img src='${allStories[i].thumbnail}' class="img-responsive"></img></a>`;
       }
     }
   }
