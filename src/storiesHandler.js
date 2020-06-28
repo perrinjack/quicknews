@@ -1,7 +1,7 @@
 class StoryHandler {
   constructor(guardianUrl = 'https://content.guardianapis.com/search') {
     this.GUARDIANURL = guardianUrl;
-    this.QUERY_STRING = `?page-size=4&api-key=8d81f046-2efd-4510-b987-0772a9c57adb&show-fields=thumbnail`;
+    this.QUERY_STRING = `?page-size=8&api-key=8d81f046-2efd-4510-b987-0772a9c57adb&show-fields=thumbnail`;
     this.URL = this.GUARDIANURL + this.QUERY_STRING;
     this.stories = this.createStoryObjects();
   }
