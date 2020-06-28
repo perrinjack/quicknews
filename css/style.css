@@ -9,6 +9,10 @@ html {
   background: #fff;
 }
 
+h2.headline {
+  font-family: "Playfair Display", times, serif;
+}
+
 body {
   font-family: "Roboto", arial, sans-serif;
   font-size: 18px;

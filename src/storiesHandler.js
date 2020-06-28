@@ -16,10 +16,17 @@ class StoryHandler {
   ///create objects of the stories.
   async createStoryObjects() {
     var data = await this.getStoriesData();
+    console.log(data);
     var storiesArray = data.map(
-      (story) => new Story(story.id, story.webTitle, story.fields.thumbnail,story.sectionName)
+      (story) =>
+        new Story(
+          story.id,
+          story.webTitle,
+          story.fields.thumbnail,
+          story.sectionName
+        )
     );
-    console.log(storiesArray);
+
     return storiesArray; ///returns a list of stories wrapped in a promise
   }
   //Take the stories as an argument. and wrapHeadline method on each one.
@@ -27,5 +34,14 @@ class StoryHandler {
     var hello = stories.map((x) => x.wrapHeadlineHtml());
     console.log(hello);
     return hello.join();
+  }
+
+  async findStoryById(id) {
+    var stoz = await this.stories;
+
+    if (stoz[2].id === id) {
+      var story = stoz[2];
+    }
+    return story;
   }
 }
