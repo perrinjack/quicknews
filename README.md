@@ -1,4 +1,4 @@
-# Guardian News Summary App.
+# Guardian News Summary App
 
 I decided to heavily concentrate on planning before attempting this weekend challenge.
 
@@ -15,4 +15,10 @@ I decided to deploy a BETA version of this project at the following address http
 
 I decided to have a play around in which I built Google Analytics monitoring into the website. This can be shown below:
 
- !<img src="image0.png" width="150" height="300" />
+ <img src="image0.png" width="300" height="500" />
+
+## Future Work
+
+* Having built this site after only 3 weeks of Javascript I struggled with testing asynchronous functions from Es6 and the relatively new 'fetch' command. I will be updating this projects testing to ensure strong test coverage in the following weeks.
+
+* On top of this there are 2 minor bugs that will be looked into in the coming weeks. One is a small outage if the api request does not contain a thumbnail image link, while the second is the appearance of commas in the article summaries.
