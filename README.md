@@ -17,7 +17,7 @@ I decided to have a play around in which I built Google Analytics monitoring int
 
 Audience Overview          |  Behaviour Overview
 :-------------------------:|:-------------------------:
- <img src="image0.png" width="300" height="500" /> |  <img src="image1.png" width="300" height="500" /
+ <img src="image0.png" width="300" height="500" /> |  <img src="image1.png" width="300" height="500" />
 
 ## Future Work
 
