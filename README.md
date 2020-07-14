@@ -15,4 +15,4 @@ I decided to deploy a BETA version of this project at the following address http
 
 I decided to have a play around in which I built Google Analytics monitoring into the website. This can be shown below:
 
- ![](image0.png "Google Analytics Snapshot")
+ !<img src="image0.png" width="150" height="300" />
