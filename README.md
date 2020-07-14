@@ -15,7 +15,9 @@ I decided to deploy a BETA version of this project at the following address http
 
 I decided to have a play around in which I built Google Analytics monitoring into the website. This can be shown below:
 
- <img src="image0.png" width="300" height="500" />
+Audience Overview          |  Behaviour Overview
+:-------------------------:|:-------------------------:
+ <img src="image0.png" width="300" height="500" /> |  <img src="image1.png" width="300" height="500" />g)
 
 ## Future Work
 
