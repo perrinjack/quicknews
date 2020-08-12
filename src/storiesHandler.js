@@ -16,7 +16,7 @@ class StoryHandler {
   ///create objects of the stories.
   async createStoryObjects() {
     var data = await this.getStoriesData();
-    console.log(data);
+    // console.log(data);
     var storiesArray = data.map(
       (story) =>
         new Story(
